@@ -1,4 +1,68 @@
 {% extends "base.html" %}
 {% block content %}
-    Index Page
+    Hello
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="{{ url_for('simple_pages.show', page="Git")}}">
+          <img src="https://cdn-media-1.freecodecamp.org/images/1*TnsFDs-DEye722CrQXjv8w.png"  class="d-block w-100" alt="Git Logo">
+            </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Git</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+             <a href="{{ url_for('simple_pages.show', page="Docker")}}">
+          <img src="https://logz.io/wp-content/uploads/2016/01/docker-facebook-1024x536-1-1024x536.png" class="d-block w-100" alt="Dockerhub Logo">
+             </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5> Docker </h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <a href="{{ url_for('simple_pages.show', page="Python_Flask")}}">
+          <img src="https://miro.medium.com/max/640/1*XzIRJGujfqAiOV2EIQgR_Q.png" class="d-block w-100" alt="Python/Flask Logo">
+        </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5> Python/Flask </h5>
+            <p></p>
+          </div>
+        </div>
+          <div class="carousel-item">
+          <a href="{{ url_for('simple_pages.show', page="Continuous_Integration_and_Deployment")}}">
+          <img src="https://www.whizlabs.com/blog/wp-content/uploads/2020/01/CI_CD_Pipelines.png" class="d-block w-100" alt="CI/CD graphic">
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+              <h5> Continuous Integration and Deployment </h5>
+            <p></p>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+    <strong>About the Author </strong> <br> Hello, my name is Charles Espulgar. I'm a Freshman student at NJIT majoring in Human Computer Interaction. What
+    started my interest in Human Computer Interaction was my curiosity initially with Computer Science, leading me to discover other tech options such as
+    HCI. My favorite subjects are science and history, but because of my recent classes I've started to like
+    web development because of my first semester professor and an interest into how websites are made as we use them every day.
+
+
 {% endblock %}

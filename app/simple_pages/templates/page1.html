@@ -1,4 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 1
+    <h1><strong>What are the main components that make up Git?</strong></h1>
+    <br>
+    <strong>Branches</strong>
+    <p><ul><li>Branches are used to allow multiple users to write code for the same project even if that project is composed of thousands of folders and files.
+        The latest version of the code is referred to as either the main or master branch.
+        From the main branch developers can fork from that, letting them work separately without touching the main branch.
+        Once completed and tested, the work done on the off-shoot branches can then be integrated into the main branch once more.</li></ul></p>
+    <strong>Merge</strong>
+    <p><ul><li>Merging allows for developers to add the helpful developments they've made in their branch and 'merge' them into the main branch.
+    During this process, devs add comments to let others working on the same project know the changes they have made.</li></ul></p>
+    <strong>Commit</strong>
+    <p><ul><li> Git commit is used to add new changes to a branch, as well as a message of all the changes made, to whichever local branch was
+        being worked on. By doing this, a “checkpoint’ is made for the developer meaning that if any further changes are made that
+    end up breaking the program it is possible to revert to this stage of the code. </li></ul></p>
+    <strong>Tags</strong>
+    <p><ul><li>Tags help organize all the commits done in a project. They differ from person to person, but typically they're version names,
+    such as Ver 1.0, 1.5, 2.5, etc., and make it easy to organize and look up the history of the project.</li></ul></p>
+    <strong>Repositories</strong>
+    <p><ul><li>Repositories contain the entirety of the project. All  branches, past and present, are all stored in the repository.
+    Having backups makes it much easier to revert to previous versions that were working while the new additions can be analyzed and fixed. </li></ul></p>
+    <br>
+    <br>
 {% endblock %}

@@ -1,4 +1,70 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 3
+
+    <strong> What is Pytest & Flask? </strong> <br><br>
+
+    <strong>Pytest- </strong> <br> Pytest is a method used in creating projects which can make tests to ensure the project works fine.
+    The most important files utilizing Pytest in this project were the simple_pages_test.py files and the context_process_test.py file.
+    The context test file was used to test the flask environment. Meanwhile, the simple_pages_test tested that every page returned a 200 status code.
+    These simple pages in turn were created via first extending base.html and then having local content which was separated with block content and endblock.</p>
+    <br>
+
+    <strong>Link to Github- </strong><br> https://github.com/cle4njit/docker_flask </p>
+    <strong>Flask Blueprint Documentation- </strong><br> https://flask.palletsprojects.com/en/2.0.x/blueprints/ </p>
+    <strong>Github Flask Documentation- </strong><br> https://github-flask.readthedocs.io/en/latest/ </p>
+    <strong>Testing Flask Applications with Pytest- </strong><br> https://flask.palletsprojects.com/en/2.0.x/testing/ </p>
+    <br><br><br>
+
+    <strong> <u> Project Outline Explanation </u></strong> </p>
+
+    <strong>DockerFile (root folder): </strong> Let's the user know what extra features need to be downloaded. </p> <br>
+
+    <strong>Readme.md (root folder): </strong> Used by Github to explain the repository/project that's been created by the user. </p> <br>
+
+    <strong>Requirements.txt (root folder): </strong> Used by the DockerFile to install specific features, such as pytest and Flask. </p>
+    </p> <br>
+
+    <strong>dev.yml (root folder | .github folder | workflows folder): </strong> The development workflow file, it details that
+    when a pull request to the master branch comes through, python 3.8 is installed alongside the features in requirements.txt and runs pytest.
+    After that, it deploys to the dev app of the project in heroku utilizing the api key and the author's username and email. </p> <br>
+
+    <strong>prod.yml (root folder | .github folder | workflows folder): </strong> The production workflow file, it details that
+    when a push request to the master branch comes through, python 3.8 is installed alongside the features in requirements.txt and runs pytest.
+    After that, it also builds a container on Docker via utilizing the author's username and password as well as extracts the user's image(s)
+    in Docker. Finally, it deploys to the prod app of the project into heroku utilizing the api key and the author's username and email. </p> <br>
+
+    <strong>__init__.py (root folder | app folder | context_processors folder): </strong> Utilized by the base.html file, this file
+    has a message created by the developer which is used in the copyright message on the website. </p> <br>
+
+    <strong>__init__.py (root folder | app folder | simple_pages folder): </strong> Used by the project, this file imports
+    needed functions from flask and jinja2, allowing for easier implementation of different pages as well as returning a 404 status
+    error if said page cannot be found. </p> <br>
+
+    <strong> page1.html, page2.html, page3.html, page4.html & index.html (root folder | app folder | simple_pages folder | templates folder): </strong>
+    These are all used in the project, this directory and the files within all extend the base.html file and has a block content file within to provide specified content. </p> <br>
+
+    <strong>style.css (root folder | app folder | static folder | css folder): </strong> In use by the html files, this file
+    provides a small aesthetic detail to each html file (larger, 200% sized text). </p> <br>
+
+    <strong>base.html (root folder | app folder | templates folder): </strong> Utilized by the html files, this file
+    provides a base template for each page on the website, allowing for a uniform look and a usable navigation bar. </p> <br>
+
+    <strong>__init__.py (root folder | app folder): </strong> Importing flask, the simple_pages directory and the context processors,
+    this file has a function of create_app which creates and configures an instance of the flask app with a secret key and registering a
+    'blueprint' from the simple_pages directory. </p> <br>
+
+    <strong>run.py (root folder | app folder): </strong> Taking create_app from app, this file is only needed for configuration/
+    working with Gunicorn in order to serve the app in production in heroku. </p> <br>
+
+    <strong>conftest.py (root folder | tests folder): </strong> Importing pytest and create_app from the app, this file defines the following
+    functions: Application (making the app itself), client (makes the http client) and runner (makes the task runner). </p> <br>
+
+    <strong>context_process_test.py (root folder | tests folder): </strong> Importing datetime and getenv from the operating system, this
+    file tests if the environment is actually working for Flask (200 status code response) and tests the two different data types used in the
+    copyright message (data and currency). </p> <br>
+
+    <strong>simple_pages_test.py (root folder | tests folder): </strong> Testing the website, this file first ensures that the navigation
+    bar is properly named and goes to the right link, as well as ensures that every page does exist for the website (200 status code). Finally,
+    it checks if a page that should not exist does properly return a 404 status code.</p> <br>
+
 {% endblock %}

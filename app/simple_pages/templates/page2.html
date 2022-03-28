@@ -1,4 +1,75 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 2
+    <head>
+    <title>Docker</title>
+        </head>
+
+    <h1><strong>Docker and Dockerhub</strong></h1>
+    <br>
+    <h2><strong>Images</strong></h2>
+    <p>Images are basically the instruction set used to create containers. Images can serve as basic templates, letting
+        developers bypass the need to rewrite the same code over and over again. They contain all the frameworks and dependencies
+        needed to run your application.</p>
+    <h2><strong>Containers</strong></h2>
+    <p>Containers are built off of images, and have within an execution environment and sets of instructions for the code to follow.
+        A user can create multiple different containers all from the same image. Containers allow
+        the user to run an application separately from the developers or user’s personal computer system.
+        By including only what is needed to make the application work, it reduces file size
+        as well as computing power required to run it. </p>
+    <br>
+    <h2><strong>Docker Commands</strong></h2>
+    <div class="dockercommands">
+    <nav>
+        <ul>
+    <li>docker –-version</li>
+        <dl>displays the current version of docker installed</dl>
+    <li>docker pull <image>'name'</image></li>
+        <dl>displays the current version of docker installed</dl>
+    <li>docker run</li>
+        <dl>used to create a container from an image</dl>
+    <li>docker ps</li>
+        <dl>used to display all running containers</dl>
+    <li>docker ps -a</li>
+        <dl>all containers active and those exited</dl>
+    <li>docker exec -it <container id> bash</li>
+        <dl>access specified currently running container</dl>
+    <li>docker stop <container id></li>
+        <dl>stops running the current active container specified</dl>
+    <li>docker kill <container id></li>
+        <dl>kills and stops all docker processes</dl>
+    <li>docker commit <conatainer id> <username/imagename></li>
+        <dl>creates a new image of an edited container </dl>
+    <li>docker login</li>
+        <dl>login to docker repository</dl>
+    <li>docker images</li>
+        <dl>lists all locally stored images</dl>
+    <li>docker rm <container id></li>
+        <dl>delete a stopped container</dl>
+    <li>docker build <path to docker file></li>
+    <dl>used to create an image from a specified folder</dl>
+        </ul>
+    </nav>
+    </div>
+    <br>
+<h2><strong> How to Start a project via command line</strong></h2>
+    <ol>
+    <li>Open terminal of choice</li>
+    <li>Use command “cd <directory path>” to choose in which directory the folder should be located in. If no project exists, use either command “docker pull <image name>” or “git clone <repository name>” to download the file.</li>
+    <li>Use the cd command to enter the directory and then type “docker build -t <choose what to name the image></li>
+    <li>docker run -dp 3000:3000 <what the image was named in the step before></li>
+    <li>Use “docker -it <image name> sh” to access terminal and run commands inside of the container</li>
+    </ol>
+    <br>
+    <h2><strong>How to open a container via command line</strong></h2>
+    <ol>
+    <li>In cmd, use command “docker ps -a” </li>
+    <li>This will show all containers that we ran. Copy the container id of the image required. </li>
+    <li>Use command <docker exec -it <container id> bash</li>
+    <li>Can use a simple command like “ls” or “uptime”</li>
+    </ol>
+    <br>
+    <h2><strong>Dockerhub Repo</strong></h2>
+    <a href="https://hub.docker.com/repository/docker/cle4/docker_flask">Click here</a>
+    <br>
+    <br>
 {% endblock %}
