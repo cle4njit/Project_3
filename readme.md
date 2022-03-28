@@ -9,4 +9,4 @@
 
 * [Developmental Deployment](https://kwilliam-dev.herokuapp.com/)
 
-Hello, my name is Charles Espulgar and this is my project.
+Hello, my name is Charles Espulgar and this is my Project for IS 218.
