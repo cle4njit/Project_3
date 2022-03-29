@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block content %}
+    <strong> The Terminology of Object-Oriented Programming </strong> <br><br>
+
+    <strong>Instantiation: </strong> Instantiation is fundamental to object-oriented programming. When instantiation is done
+    in Python, a new class/object is cerated with methods which are called whenever a class is instantiated. This provides a basis for the creation of children classes and derived methods
+    ato form.</p>
+    <img src="https://www.researchgate.net/profile/Klaus-Dieter-Thoben/publication/264812035/figure/fig4/AS:667596839985155@1536178898948/
+    shows-a-simplified-view-of-the-instantiation-of-Product-Avatars-The-mechanism-involved.png", alt="Instantiation Diagram"/>
+    <br><br><br>
+
+    <strong>Object: </strong> Any data type in programming is an object, which has a state and behavior.
+    States are the attributes and properties of said object, while the behavior is the methods of execution for said object.
+    They also have an identity, or a name to allow for other objects to use their methods. In Python, an object must first have
+    a pre-provided value known as self, and can have an init method to provide initial values to any instantiated object. The
+    image below is a visualization of Objects.</p>
+    <img src="https://javatutorial.net/wp-content/uploads/2014/11/class-object-featured-image.png", alt="Object diagram"/>
+    <br><br><br>
+
+    <strong>Class: </strong> A collection of objects, in programming classes consist of the base properties of which the objects are
+    created. With some attributes and methods, classes in Python are defined by their keyword class, and have publicly
+    accessible variables known as attributes which can be accessed by the dot operator.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/CPT-OOP-objects_and_classes_-_attmeth.svg/249px-CPT-OOP-objects_and_classes_-_attmeth.svg.png?20140609100608", alt="Class Diagram"/>
+    <br><br><br>
+
+    <strong>Namespace: </strong> A collection of currently defined names that describe information about an object,
+    Namespaces are comparable to a dictionary in which there is a set relation of object names and their actual values.
+    These can be seen as four types: Built-in, which is all of Python's objects available to you at the start,
+    global which is any of the names given to objects in the main program, local which is from another namespace, and
+    enclosing which encapsulates the whole of the local namespace. </p>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/types_namespace-1.png" alt="Namespace diagram">
+    <br><br><br>
+
+    <strong>Constructor: </strong> A constructor is called whenever a new instance of a class is
+    being built. Preparing the class/object for use, they are kind of like instance methods; but differ in that they have no
+    defined return type and are not implicitly inherited. They also have different rules for scope
+    modifiers and usually the same name as the declaring class.</p>
+    <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/09/Constructor-in-Python.png" alt="Constructor image">
+    <br><br><br>
+
+    <strong>Fixture: </strong> Fixtures
+    are used in testing and help start setup services, as well as with the state or other operating environments. Accessed by test functions
+    through arguments, each fixture often has a parameter named after it within the test function's definition. Fixtures allow for easy 'teardown'
+    logic no matter how many are being used and without concern for singular care per error. Fixtures are mostly used
+    in the first step of AAA, arrange. </p>
+    <br><br><br>
+
+    <strong>Type Hint: </strong> Type hints are utilized to directly declare
+    the data type of variables when they are declared. Available in more modern versions of python, when utilized
+    they help ensure that small errors are caught, and help
+    reinforce understanding of a code's architecture.</p>
+    <br>
+
+    <strong>Type Cast: </strong> Akin to type hints, type cast is used to manually convert a variable data type
+    to an acceptable form in order to prevent errors of incompatible data being used in functions.</p>
+    <br><br><br>
+
+    <strong>Unit Test: </strong> Unit testing is the process of testing each
+    component of a program/application. Breaking up a larger project into small parts which have only a few inputs
+    and only one output, the process of bug checking becomes more honed in and focused towards functions as well as making it easier to remove
+    test code when a final product/version is shipped.</p>
+    <img src="https://miro.medium.com/max/1400/1*Gi4NPFboHsUXnXid25hTvg.png" alt="Unit Testing diagram">
+    <br><br><br>
+
+    <strong>Static: </strong> Static means that something has an unchanging state. Not initialized within
+    new scopes, they can be accessed via dot operators and only one copy of it is shared by all objects of a class.</p>
+
+    <strong>Instance Method: </strong> Instance method must have one parameter of self which points to an
+    instance of itself when called. With this parameter, it can freely access attributes and other methods upon itself
+    which allows for easier modification and modification of its class.</p>
+
+    <strong>Instance Property: </strong> Instance properties are properties that require an instance
+    that is created with the help of the class name itself.</p>
+
+    <strong>Static Method: </strong> Marked with @staticmethod, static methods don't have a self parameter,
+    and thus cannot modify object state nor class state. They are restricted in what data can be accessed, and
+    thus are useful for namespacing methods. The image below provides a diagram of all methods.</p>
+
+    <strong>Static Property: </strong> Similar to an instance property, a static property is a property defined within a class;
+    but they don't change throughout the program's runtime.</p>
+    <br><br><br>
+
+    <strong>Encapsulation: </strong> Encapsulation is a fundamental concept of
+    OOP in that it is the idea of wrapping data and the methods of that data within a single unit. This in turn allows for
+    privatization of variables and methods to prevent accidental modification. This in turn creates two types of members: Protected and Private. </p>
+    <img src="https://i.ytimg.com/vi/sNNuVg7qTxk/maxresdefault.jpg" alt="Encapsulation diagram">
+    <br><br><br>
+
+    <strong>Inheritance: </strong> Deriving properties from a base class into child classes, inheritance is utilized as it
+    helps represent relationships well, allows for easy re-usability without repetition and is transitive (class C which inherits
+    from class B which inherits from class A also has class A properties). Inheritance can also be done in multiple levels,
+    in that a child can have multiple base classes. The image below provides a diagram of this in the form of polygons.</p>
+    <br><br><br>
+
+    <strong>Polymorphism: </strong> The condition of having multiple forms, Polymorphism is the same function
+    name being utilized for different types. It allows for easier creation of multiple
+    classes as well as usage of functions upon different data types. </p>
+
+    <br><br><br>
+
+    <strong>Abstraction: </strong> Abstraction
+    is the process of making a class a sort of blueprint for more detailed classes. This is done in order to allow child classes
+    to be build from an abstract class, which contains abstract method(s) which have a declaration.
+    This in turn allows for the quicker creation of child classes, as it provides a common interface for different implementations.
+   </p>
+
+    <br><br><br>
+
+    <strong>Overview of SOLID: </strong> Introduced in 2000 by Robert C. Martin in his paper, "Design Principles and Design Patterns,"
+    SOLID is an acronym for 5 different design principles. This was made in order to create projects that were more understandable,
+    flexible and maintainable. Each part of SOLID is more explained in the SOLID page, as well as an example of how a simple calculator
+    project demonstrates the principles of SOLID.</p>
+    <img src="https://media.proprofs.com/images/QM/user_images/2236918/1520206100.jpg" alt="SOLID table">
+    <br><br><br>
+
+    <strong>Overview of Design Patterns: </strong> In object-oriented programming, design patterns consists of description of certain
+    objects and classes, as well as the attributes and dependencies of the class. Being reusable and thus able to speed up
+    production, design patterns can be structural and behavioral, which define the behavior
+    of said objects.</p>
+
+    <br><br><br>
+{% endblock %}

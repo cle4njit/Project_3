@@ -2,7 +2,7 @@
 {% block content %}
     <strong> What is Continuous Integration and Deployment? </strong> <br><br>
 
-    <strong>Continuous Delivery / CD: </strong> Continuous Deliver is a software development doctrine, seeing that continuous development builds software so
+    <strong>Continuous Delivery / CD: </strong> <p>Continuous Deliver is a software development doctrine, seeing that continuous development builds software so
     that it can be pushed out to production lines when needed. According to Martin Fowler, to be called continuous delivery, the software must be deployable throughout its life cycle,
     a developer must keep the software deployable over working new features, allows for fast return, and has automated feedback on the production readiness
     of the system any time somebody makes a change to them. On top of that, it should be able to perform push-button deployments of any version of the software to any
@@ -12,7 +12,7 @@
     Continuous Delivery comes with a multitude of benefits, such as a reduced deployment risk, believable progress and user feedback.
     </p>
     <br>
-    <strong>Continuous Integration / CI: </strong> A software development doctrine, continuous integration (CI) involves several developers
+    <strong>Continuous Integration / CI: </strong> <p>A software development doctrine, continuous integration (CI) involves several developers
     integrating their work frequently that is verified by an automated build and tested. The benefit of this is that it,
     "...leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly." Therefore, leading to
     simpler integration. Originating from Kent Beck's, "Extreme Programming," while it may not require a particular tool, it is useful
@@ -23,7 +23,7 @@
     </p>
     <br>
 
-    <strong>Project Implementation: </strong> To do this automatically upon heroku, There are separate commands for pushing or pulling from the master branch.
+    <strong>Project Implementation: </strong> <p>To do this automatically upon heroku, There are separate commands for pushing or pulling from the master branch.
     Specified in dev.yml and prod.yml within .github and workflows (folders). To effect the production heroku app, a git push has to be made to the master branch.
     Once that is done, it additionally goes through pytest, extracts metadata from Docker using specified credentials as well as updates the heroku prod app accordingly.
     To effect the development heroku app, a git pull must be made from the master branch. Again performing a pytest, it then ONLY updates the heroku dev app accordingly with specified credentials.

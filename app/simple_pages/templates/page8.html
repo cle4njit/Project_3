@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+    <strong> How Does Our Calculator Showcase SOLID? </strong> <br><br>
+
+    <strong>Simple Calculator: </strong> In project 2, we worked on a calculator class with multiple
+    different functions. Our calculator in itself demonstrates
+    SOLID through having isolated functions that limit interaction to prevent potential malfunction due to crossing
+    operations, the extension of every operation within different classes without allowing for potentially damaging modification,
+    every operation is isolated enough to allow for easy addition of new operations like division, and there is little
+    to no reliance on the derived/based classes for the parent/upper classes.</p>
+
+    <strong>Single-Responsibility Principle: </strong> Singe-Responsibility Principles states that every component of your code should have one, and only one responsibility.
+    As such, the only caveat to implementing SRP is making sure you have improperly assigned responsibilities from various areas in code.</p>
+    <br><br><br>
+
+    <strong>Open-Closed Principle: </strong> The O stands for the Open-Closed Principle. OCP states that you should not need to modify the code you have already written to
+    accommodate new functionality, but to be able to integrate and merge new code into it.  </p>
+    <img src="https://1.bp.blogspot.com/-M01ajBmLSlg/TixAYzm_eyI/AAAAAAAAA9Y/g0qLrJfFCMA/s1600/OpenClosed.png" alt="Open-Closed Principle">
+    <br><br><br>
+
+    <strong>Liskov Substitution Principle: </strong> The L in SOLID, the Liskov substitution principle states that classes within
+    a program should be replaceable with instances of their subtypes without causing error. Derived classes should also be able
+    to extend their base class without changing their behavior.</p>
+    <img src="https://th.bing.com/th/id/R.498b7e1673ede23984b3ac3267c99e2e?rik=dXcUz6U2UR%2bJ1A&riu=http%3a%2f%2fwww.javabrahman.com%2fwp-content%2fuploads%2fLiskovSubstitutionPrinciple.png&ehk=l%2bsqKqGcVCGc%2b2rowp3YlVcN02ctzoy8w2ToXac%2fD9U%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Liskov Substitution Principle">
+    <br><br><br>
+
+    <strong>Interface Segregation Principle: </strong> The I in SOLID, tell us that a class should only have the interface needed and
+    to avoid methods that won’t work or that have no reason to be part of that class.</p>
+    <img src="https://th.bing.com/th/id/R.d04e9753c5b81d4e46369b8dcf47af49?rik=2%2fYAjY2m%2fmRHXw&riu=http%3a%2f%2fwww.javabrahman.com%2fwp-content%2fuploads%2fInterface-Segregation-Principle-before-applying.png&ehk=29wlKzbKFwF7IowfDDoyoieRHosHd%2b5cQoAQhEEcGns%3d&risl=&pid=ImgRaw&r=0" alt="Interface Segregation Principle">
+    <br><br><br>
+
+    <strong>Dependency Inversion Principle: </strong> The final letter of D in SOLID, the dependency inversion principle states that
+    classes should depend on abstraction rather than concretion. </p>
+    <img src="https://i.ytimg.com/vi/ykGW0Zen0YY/maxresdefault.jpg" alt="Dependency Inversion Principle">
+    <br><br><br>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <strong> What is AAA Testing?  </strong> <br><br>
+
+    <strong>Arrange: </strong> <p>
+    Arrange inputs and targets specified cases. Arrange steps should build the base of the test case.
+    Some questions it asks is if the test requires any objects or special settings, or if it needs to prep a database.
+    Arrange takes care of all of these operations once its executed.  </p>
+    <br>
+
+    <strong>Act: </strong> <p>
+    Act works on the target behavior. Act steps should cover the main section of code to be tested. This could be calling a function
+    or method, or somehow interacting with a web page. Act allows for actions to be more honed in and focused on the target behavior. </p>
+    <br>
+
+    <strong>Assert: </strong> C.</p>
+    <p>
+        Assert lets the developer know what should be the expected outcomes of the test. Act steps should give the user a concise message
+        of what the code should output. Assert steps verify how correct the output is. Overall, Assertions ultimately determine whether the code is up to spec and passes or fails.</p>
+    <img src="https://miro.medium.com/max/1400/1*_MiurxVJ3baRaV6s7r4vwA.png" alt="AAA Testing Diagram">
+    <br><br><br>
+
+
+
+
+{% endblock %}
