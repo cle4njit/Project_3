@@ -8,7 +8,7 @@ from app.db import db
 
 Base = declarative_base()
 
-location_user = db.Table('location_user', db.Model.metadata,
+user_location = db.Table('location_user', db.Model.metadata,
     db.Column('user_id', db.Integer, db.ForeignKey('users.id')),
     db.Column('location_id', db.Integer, db.ForeignKey('locations.id'))
 )
@@ -66,7 +66,7 @@ class User(UserMixin, db.Model):
     active = db.Column('is_active', db.Boolean(), nullable=False, server_default='1')
     is_admin = db.Column('is_admin', db.Boolean(), nullable=False, server_default='0')
     locations = db.relationship("Location",
-                    secondary=location_user, backref="users")
+                    secondary=user_location, backref="users")
     songs = db.relationship("Song",
                     secondary=song_user, backref="users")
 
